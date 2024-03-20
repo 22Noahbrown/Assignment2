@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
 main{
-    display: row;
-columns: 2;
+    display: grid;
+column-count: 2;
 padding-left:45px;
 padding-right: 45px;
 margin-bottom: 15px;
@@ -30,13 +30,43 @@ h1 {
     font-style: normal;
 }
 
-
-
+article > h2:first-of-type {
+   
+    color: rgb(43, 42, 42);
+    font-size: 2.3vw; /* Using viewport width as a relative unit */
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+p.FirstP{
+    color: green;
+    grid-row: 1;
+}
+p.SecondP{
+  color: blueviolet; 
+}
 strong{
     color: orange;
    
 }
-
+article > p:first-of-type {
+    color: black;
+    margin-top: 0px;
+    font-size: larger;
+    text-indent: 10px;
+}
+p{
+    font-size: large;
+    margin-top: 0px;
+}
+article > h2:not(:first-child){
+    color: blue;
+    font-size: large;
+    font-style: bold;
+    align-items: start;
+}
 
 footer {
     position: fixed; /* or absolute, depending on your layout */
