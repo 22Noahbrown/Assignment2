@@ -9,7 +9,7 @@ overflow-wrap: break-word;
 
 }
 img{
-    max-width: 50%;
+    max-width: 60%;
   height: auto;
     margin-top: 65px;
     position: relative;
@@ -30,21 +30,38 @@ h1 {
     font-style: normal;
 }
 
+article > h2:first-child{
 
-
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+article > p:first-of-type{
+    text-indent: 10px;
+}
 strong{
     color: orange;
-   
+}
+article > h2:not(:first-of-type){
+    color: blue;
+    font-size: medium;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-style: bold;
+}
+article > p:not(:first-of-type){
+    color: blueviolet;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.Layout1 {
+    background-color: blueviolet;
+    color: cadetblue;
 }
 
-
-footer {
-    position: fixed; /* or absolute, depending on your layout */
-    bottom: 0;
+footer{
     margin-left: 45px;
-    width: 100%;
-    font-size: large;
-    align-items: baseline;
 }
 
 em {
