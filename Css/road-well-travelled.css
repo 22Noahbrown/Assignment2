@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
 main{
-    display: flexbox;
     columns: 2;
     padding-left:45px;
     padding-right: 20px;
@@ -10,7 +9,7 @@ main{
     h1 {
         position: absolute;
         color: orange;
-        font-style: bold;
+        font-weight: bold;
         font-size: large;
         border-left: thin solid rgb(108, 105, 105);
         margin-left: 45px;
@@ -64,7 +63,6 @@ main{
     p{
         font-size: medium;
     }
-    
     .Layout2{
         border: 2px hidden rgb(75, 70, 74);
         border-radius: 0.5em;
@@ -76,7 +74,6 @@ main{
         padding-top: 45px;
         display: flex;
     flex-wrap: wrap;
-
     }
     .Layout2 > h2{
         font-size: medium;
